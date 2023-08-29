@@ -18,7 +18,7 @@ function App() {
   const fetchCourses = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:3000/courses");
+      const response = await axios.get("https://courses-react-weld.vercel.app/");
       setCourses(response.data);
       setLoading(false);
     }
